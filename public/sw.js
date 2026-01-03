@@ -1,3 +1,4 @@
+// @ts-nocheck
 const CACHE_NAME = 'diary-v1';
 self.addEventListener('install', (event) => {
   event.waitUntil(
