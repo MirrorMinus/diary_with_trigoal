@@ -46,7 +46,7 @@ const App = () => {
       {/* Header / Title Bar */}
       <header className="bg-white/80 backdrop-blur-md sticky top-0 z-20 px-6 py-4 border-b border-gray-100 flex items-center justify-between">
         <h1 className="text-xl font-extrabold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-          TriLevel Diary
+          TriGoal Diary
         </h1>
         <div
           className="w-2 h-2 rounded-full bg-green-400 animate-pulse"
