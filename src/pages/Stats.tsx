@@ -44,7 +44,7 @@ const Stats: React.FC<StatsProps> = ({ goals, refreshTrigger }) => {
           if (val < 4) {
             val += 24;
           }
-
+          let bedTimeVal: number | null = null;
           bedTimeVal = val;
           displayTime = d.toLocaleTimeString([], {
             hour: '2-digit',
@@ -118,8 +118,8 @@ const Stats: React.FC<StatsProps> = ({ goals, refreshTrigger }) => {
                   allowDataOverflow={false} // Allow auto-scaling if user sleeps at 4 PM
                 />
                 <Tooltip
-                  formatter={(value: number, name: string, props: any) => [
-                    props.payload.displayTime,
+                  formatter={(_value: any, _name: string, props: any) => [
+                    props.payload.displayTime || '--:--',
                     'Bedtime',
                   ]}
                   contentStyle={{
